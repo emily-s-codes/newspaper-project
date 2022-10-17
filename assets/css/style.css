@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: rgb(233, 233, 224);
+}
+
+/* STYLED FOR 1440PX */
+
+@font-face {
+    font-family: 'CormorantGaramond-Bold';
+    src: url("../fonts/CormorantGaramond-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'CormorantGaramond-Regular';
+    src: url("../fonts/CormorantGaramond-Regular.ttf");
+}
+
+/* styles
+rgb(233, 233, 224)
+#333
+*/
+
+/* ===================
+    header
+=================== */
+
+header h1 {
+    text-align: center;
+    margin: 10px;
+    font-family: 'CormorantGaramond-Bold', serif;
+    color: #333;
+    font-size: 3rem;
+}
+
+header h1 span {
+    font-size: 5rem;
+}
+
+header section {
+    border-top: 4px double #333;
+    border-bottom: 4px double #333;
+    margin: 10px 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ===================
+    main
+=================== */
+.layout__grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* height: 800px; */
+}
+
+main {
+    grid-column: 1 / 2;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+main h2 {
+    font-family: 'CormorantGaramond-Bold', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5px;
+    color: #333;
+}
+
+.atf {
+    display: flex;
+    margin: 10px 0;
+}
+
+.atf__left {
+    width: 50%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.atf h3 {
+    font-family: 'CormorantGaramond-Bold', serif;
+    font-size: 2rem;
+    color: #333;
+}
+
+.atf p {
+    font-family: 'CormorantGaramond-Regular', serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.atf__right {
+    width: 50%;
+}
+
+.atf__right img {
+    width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: 'CormorantGaramond-Regular', serif;
+    color: #333;
+}
+
+/* ===================
+    aside
+=================== */
+aside {
+    grid-column: 2 / 3;
+    margin-right: 50px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.adspace p {
+    font-family: 'CormorantGaramond-Bold', serif;
+    color: #333;
+    font-size: 4.3rem;
+    width: 80%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+aside .sponsors {
+    font-family: 'CormorantGaramond-Bold', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+aside .knives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+
+aside .knives h2 {
+    font-size: 2rem;
+    font-family: 'CormorantGaramond-Bold', serif;
+    color: #333;
+}
+
+aside .knives p {
+    font-family: 'CormorantGaramond-Regular', serif;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+aside .knives a {
+    font-family: 'CormorantGaramond-Regular', serif;
+    font-size: 2rem;
+    color: gray;
+}
+
+aside section {
+    border: 4px double #333;
+    height: 225px;
+}
+
+
+
+aside section img {
+    width: 80%;
+    filter: grayscale(100%);
+    margin: 10% 10%;
+}
